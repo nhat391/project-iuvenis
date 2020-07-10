@@ -1,4 +1,12 @@
-header .dang-nhap {
+
+/* Reset CSS (Hiếu iceTea) */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+header .headline {
     font-size: 12px;
     display: flex;
     justify-content: space-between;
