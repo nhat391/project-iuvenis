@@ -1,3 +1,4 @@
+        /* >> Hiếu iceTea */
 
 /* Reset CSS (Hiếu iceTea) */
 * {
@@ -6,22 +7,150 @@
     box-sizing: border-box;
 }
 
-header .headline {
+/* cấu hình headline */
+
+.headline {
+    height: 40px;
     font-size: 12px;
     display: flex;
     justify-content: space-between;
     background-color: #f1f1f1;
     padding-top: 1rem;
 }
-header .contact a {
+
+.headline .left{
+    float: left;
+}
+
+.headline .right{
+    float: right;
+}
+
+.headline .right ul{
+    list-style: none;
+}
+
+.headline .right ul li{
+    display: inline;
+    margin-right: 40px;  
+}
+
+.headline .right ul li:last-child{
+    margin-right: 0px;  
+}
+
+.headline .right ul li a{
     color: black;
 }
-header .contact .register {
-    padding-left: 1rem;
-    padding-right: 1rem;
+
+.headline .right ul li a:hover{
+    color: blueviolet;
+}
+
+/* Xử lý LOGO */
+
+
+.logo .logo-image {
+    width: 200px;
+    height: 60px;
+    background-color: black;
+    margin: 20px auto;
+}
+
+/* xử lý NAV */
+nav {
+    height: 60px;
+    background-color: white;
+}
+
+.my-navbar ul li {
+    margin-right: 30px;
+}
+
+.my-navbar ul li:last-child {
+    margin-right: 0px;
 }
 
 
-header .menu .navbar .collapse .nav-item a {
-    color: black;
+.my-navbar .active a{
+    font-size: 16px;
+    font-weight: 600;
 }
+
+.my-navbar .nav-item a{
+    transition: all 0.2s ease-in-out;
+}
+
+.my-navbar .nav-item:hover a{
+    font-weight: 600;
+}
+
+.search-box {
+    border: none;
+    background-color: #f1f1f1;
+}
+
+/* Ảnh bìa */
+.anh-bia {
+    height: 600px;
+    width: 100%;
+    background-color: aqua;
+}
+
+/* Sản phẩm mới */
+
+.san-pham-moi {
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.san-pham-moi h1 {
+    text-transform: uppercase;
+    font-weight: 330;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.san-pham-moi .item-san-pham-moi {
+    height: 400px;
+    width: 100%;
+    background-color: aqua;
+}
+
+/* item Sản phẩm */
+
+.item-san-pham {
+    border: none;
+    margin-top: 20px;
+}
+
+footer {
+    background-color: #272727;
+    height: 359px;
+    color: white;
+}
+
+.col-footer {
+    margin-top: 60px;
+    height: 200px;
+    border-right: 1px solid white;
+}
+
+.col-footer:last-child {
+    border-right: none;
+}
+
+.col-footer h2 {
+    color: #FFB300;
+    list-style: none;
+}
+
+.col-footer ul {
+    list-style: none;
+}
+
+.copyright p {
+    margin-top: 50px;
+}
+
+        /* >> END Hiếu iceTea */
