@@ -1,0 +1,27 @@
+
+/* Reset CSS (Hiếu iceTea) */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+header .headline {
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #f1f1f1;
+    padding-top: 1rem;
+}
+header .contact a {
+    color: black;
+}
+header .contact .register {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+
+header .menu .navbar .collapse .nav-item a {
+    color: black;
+}
