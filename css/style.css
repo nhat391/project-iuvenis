@@ -372,17 +372,13 @@ footer .col-footer ul li .fa-google {
     margin-top: 50px;
     margin-bottom: 132px;
 }
-.information .vertical-menu p {
-    font-size: 30px;
+.information h3 {
     padding-bottom: 50px;
 }
 .information .vertical-menu a {
     padding-bottom: 20px;
 }
-.information .item-list p {
-    font-size: 30px;
-    padding-bottom: 50px;
-}
+
 .information .item-list thead th {
     padding-top: 13px;
     padding-bottom: 13px;
@@ -399,5 +395,39 @@ footer .col-footer ul li .fa-google {
 
 .information .item-list table th {
     font-weight: normal;
-    
+}
+
+.address-item {
+    padding: 20px 40px;
+    border: 1px solid #707070;
+    margin-bottom: 20px;
+}
+
+.address-item p:first-child{
+    margin-bottom: 20px;
+}
+
+.address-item p{
+    margin-bottom: 10px;
+}
+
+.address-item p:first-child a{
+    float: right;
+}
+
+.address-item p:first-child a:nth-child(3){
+    color: #FFB300;
+}
+
+.address-item p:first-child a:nth-child(2){
+    margin-left: 20px;
+    color: #ED1C24;
+}
+
+.address-item p:first-child strong {
+    font-size: 18px;
+}
+.my-btn {
+    padding: 12px 27px;
+    border-radius: 0%;
 }
