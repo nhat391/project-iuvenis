@@ -2,9 +2,15 @@
 
 /* Reset CSS (Hiếu iceTea) */
 * {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
+    font-family: Roboto Mono;
+    
+}
+
+p {
+    margin-bottom: 0;
 }
 
 /* cấu hình headline */
@@ -15,7 +21,7 @@
     display: flex;
     justify-content: space-between;
     background-color: #f1f1f1;
-    padding-top: 1rem;
+    line-height: 40px;
 }
 
 .headline .left{
@@ -32,7 +38,7 @@
 
 .headline .right ul li{
     display: inline;
-    margin-right: 40px;  
+    margin-right: 12px;  
 }
 
 .headline .right ul li:last-child{
@@ -46,6 +52,96 @@
 .headline .right ul li a:hover{
     color: blueviolet;
 }
+
+#ModalLogin .modal-content {
+    
+}
+
+#ModalLogin button[type=submit] {
+    background-color: #ED1C24;
+    color: white;
+    border: none;
+    border-radius: 0;
+    width: 160px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: medium;
+    margin-bottom: 20px;
+}
+
+#ModalLogin .modal-header {
+    border-bottom: none;
+
+    padding-top: 50px;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-bottom: 30px;
+
+    position: relative;
+}
+
+#ModalLogin #forgot-pw {
+    float: right;
+    line-height: 50px;
+}
+.modal-dialog {
+    max-width: 812px;
+}
+
+.modal-body {
+    padding-bottom: 50px;
+    padding-left: 97px;
+    padding-right: 97px;
+    padding-top: 0;
+}
+#ModalLogin .form-group:nth-child(1)  {
+    margin-bottom: 30px;
+}
+
+#ModalLogin .form-group:nth-child(2) {
+    margin-bottom: 26px;
+}
+
+.close {
+    position: absolute;
+    right: 25px;
+    top: 20px;
+}
+
+
+
+
+#ModalSignUp button[type=submit] {
+    background-color: #ED1C24;
+    color: white;
+    border: none;
+    border-radius: 0;
+    width: 160px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: medium;
+    margin-bottom: 20px;
+}
+#ModalSignUp .modal-header {
+    border-bottom: none;
+
+    padding-top: 50px;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-bottom: 30px;
+
+    position: relative;
+}
+#ModalSignUp .form-group:nth-child(1)  {
+    margin-bottom: 30px;
+}
+
+#ModalSignUp .form-group:nth-child(2) {
+    margin-bottom: 26px;
+}
+
+
+
 
 /* Xử lý LOGO */
 
@@ -61,6 +157,10 @@
 nav {
     height: 60px;
     background-color: white;
+}
+.my-navbar .nav-link {
+    padding-right: 0px !important;
+    padding-left: 0px !important;
 }
 
 .my-navbar ul li {
@@ -88,6 +188,17 @@ nav {
 .search-box {
     border: none;
     background-color: #f1f1f1;
+}
+
+.my-breadcrumb {
+    background-color: #e9ecef;
+    height: 60px;
+    line-height: 60px;
+}
+
+.my-breadcrumb a{
+    color: black;
+    
 }
 
 /* Ảnh bìa */
@@ -124,16 +235,26 @@ nav {
     margin-top: 20px;
 }
 
+
+
+
+
 footer {
     background-color: #272727;
     height: 359px;
     color: white;
+    
 }
 
 .col-footer {
     margin-top: 60px;
+    padding-left: 68px ;
     height: 200px;
     border-right: 1px solid white;
+}
+
+.col-footer:first-child {
+    padding-left: 0px;
 }
 
 .col-footer:last-child {
@@ -148,9 +269,135 @@ footer {
 .col-footer ul {
     list-style: none;
 }
+.col-footer ul a {
+    color: white;
+    font-size: 20px;
+}
+footer .col-footer h2 {
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: bold  ;
+}
 
 .copyright p {
     margin-top: 50px;
 }
 
+.wrap-footer {
+    margin: 0 140px;
+    
+}
+
+footer h2, footer a {
+    font-family: 'Open Sans', sans-serif;
+}
+footer .col-footer ul li .fa-facebook-f {
+    border-radius: 50%;
+    background-color: #276092;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    line-height: 25px;
+}
+footer .col-footer ul li .fa-twitter {
+    border-radius: 50%;
+    background-color:#56A7E5;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    line-height: 25px;
+}
+footer .col-footer ul li .fa-google {
+    border-radius: 50%;
+    background-color: #CF5D46;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    line-height: 25px;
+}
+.remove-padding {
+    padding-right: 0px ;
+    padding-left: 0px;
+}
+
+.col-footer {
+    padding-right: 0px ;
+}
+
+
+
+
+.slider2 img {
+	width: 100%; height: 100px;
+}
+
         /* >> END Hiếu iceTea */
+
+
+.visual-img .thumb img:hover, .visual-img .thumb img.active {
+    box-shadow: 0 0 15px rgba(0, 0, 0, .25);
+}
+
+.visual-img img {
+    margin-bottom: 8px;
+}
+
+.slick-prev, .slick-next {
+    /* background-color: #FFB300; */
+    
+}
+
+.slick-prev::before, .slick-next::before {
+    color: #FFB300;
+    position: absolute;
+    top: -25px;
+    left: 0px;
+
+}
+
+.related-product-list-item .item-san-pham{
+    padding: 5px;
+}
+
+.related-product-list-item {
+    position: relative;
+}
+
+.information .vertical-menu a {
+    display: block;
+    color: black;
+}
+
+.information {
+    margin-top: 50px;
+    margin-bottom: 132px;
+}
+.information .vertical-menu p {
+    font-size: 30px;
+    padding-bottom: 50px;
+}
+.information .vertical-menu a {
+    padding-bottom: 20px;
+}
+.information .item-list p {
+    font-size: 30px;
+    padding-bottom: 50px;
+}
+.information .item-list thead th {
+    padding-top: 13px;
+    padding-bottom: 13px;
+}
+.information .item-list tbody th, .information .item-list tbody td {
+    padding-top: 26px;
+    padding-bottom: 26px;
+}
+
+.information .item-list table {
+    text-align: center;
+    
+}
+
+.information .item-list table th {
+    font-weight: normal;
+    
+}

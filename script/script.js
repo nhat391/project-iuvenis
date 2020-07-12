@@ -1,17 +1,18 @@
 $(document).ready(function () {
-	$('.sample .thumb img').click(function () {
+	$('.visual-img .thumb img').click(function () {
 		var s = $(this).attr('big-photo');
-		$('.sample #big-photo').attr('src', s);
+		$('.visual-img #big-photo').attr('src', s);
 
-		$('.sample .thumb img').removeClass('active'); 
+		$('.visual-img .thumb img').removeClass('active'); // Remove class 'active' ra khỏi TẤT CẢ các thumb
 		$(this).addClass('active'); // Add class 'active' vào thumb vừa click
 	});
 });
 
-
-$('.slider2').slick({
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2000,
+$(document).ready(function(){
+	$('.related-product-list-item').slick({
+		slidesToShow: 4,
+		slidesToScroll: 4
+	});
   });
+
+  
