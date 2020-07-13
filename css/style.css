@@ -12,6 +12,11 @@
 p {
     margin-bottom: 0;
 }
+h3 {
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 0;
+}
 
 /* cấu hình headline */
 
@@ -53,10 +58,6 @@ p {
     color: blueviolet;
 }
 
-#ModalLogin .modal-content {
-    
-}
-
 #ModalLogin button[type=submit] {
     background-color: #ED1C24;
     color: white;
@@ -79,6 +80,14 @@ p {
 
     position: relative;
 }
+#ModalLogin .modal-body .col-12 {
+    padding: 0;
+}
+#ModalLogin .modal-body .col-12 a {
+    float: right;
+    vertical-align: bottom ;
+}
+
 
 #ModalLogin #forgot-pw {
     float: right;
@@ -125,10 +134,7 @@ p {
 #ModalSignUp .modal-header {
     border-bottom: none;
 
-    padding-top: 50px;
-    padding-left: 80px;
-    padding-right: 80px;
-    padding-bottom: 30px;
+    padding: 50px 80px 30px 80px;
 
     position: relative;
 }
@@ -141,6 +147,62 @@ p {
 }
 
 
+#complete-signup .modal-header {
+    border-bottom: none;
+}
+#complete-signup .modal-body p {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 400;
+    padding-top: 10px;
+}
+#complete-signup .modal-body {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+
+#recoveryPassword .modal-header {
+    border-bottom: 0;
+}
+#recoveryPassword .modal-footer {
+    border-top: 0;
+}
+#recoveryPassword  .modal-body h3 {
+    text-align: center;
+    padding-bottom: 30px;
+    padding-top: 44px;
+}
+#recoveryPassword  .modal-body p {
+    padding-bottom: 10px;
+}
+#recoveryPassword  .modal-body  button {
+    background-color: #ED1C24;
+    color: white;
+    border: none;
+    border-radius: 0;
+    width: 160px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: medium;
+    margin-bottom: 20px;
+    margin-top: 50px;
+    align-items: center;
+    margin-left: 228px;
+}
+
+
+#announcementPassword .modal-header {
+    border-bottom: 0;
+}
+#announcementPassword .modal-body h3 {
+    text-align: center;
+    padding-top: 44px;
+    padding-bottom: 30px;
+}
+#announcementPassword .modal-body span {
+    text-align: center;
+}
 
 
 /* Xử lý LOGO */
@@ -355,6 +417,15 @@ footer .col-footer ul li .fa-google {
 
 }
 
+
+
+
+.related-product {
+    padding-bottom: 80px;
+}
+.related-product h3 {
+    text-align: center;
+}
 .related-product-list-item .item-san-pham{
     padding: 5px;
 }
@@ -362,6 +433,11 @@ footer .col-footer ul li .fa-google {
 .related-product-list-item {
     position: relative;
 }
+
+
+
+
+
 
 .information .vertical-menu a {
     display: block;
@@ -430,4 +506,86 @@ footer .col-footer ul li .fa-google {
 .my-btn {
     padding: 12px 27px;
     border-radius: 0%;
+}
+
+
+
+.store .filter {
+    float: right;
+}
+.store .filter span {
+    font-size: 30px;
+    vertical-align: bottom ;
+}
+.store .filter .btn-secondary {
+    color: black;
+    background-color: white;
+}
+.store .filter .btn {
+    border-radius: 0;
+}
+.store .arrange h3 {
+    text-transform: uppercase;
+}
+
+
+
+.detail {
+    padding-top: 80px;
+}
+.detail .col-md-6 .col-12 a {
+    float: right;
+}
+.detail .row .size button {
+    width: 42px;
+    height: 42px;
+    background-color: white;
+    border-color: #707070;
+    border-width: 1px;
+    -webkit-appearance: none;
+}
+.detail .row .size button:hover {
+    background-color: #ED1C24;
+    color: white;
+}
+.detail .row .size button:focus {
+    background-color: #ED1C24;
+    color: white;
+    border: solid 1px black;
+    border-radius: 0;
+}
+
+.detail .amount .so-luong {
+    width: 50px;
+    height: 42px;
+}
+.detail .amount button {
+    width: 42px;
+    height: 42px;
+    background-color: white;
+    border-color: #707070;
+    border-width: 1px;
+    -webkit-appearance: none;
+}
+.detail .amount a {
+    padding: 10.5px 18.5px;
+    background-color:  #ED1C24;
+    color: white;
+    text-decoration: initial;
+}
+.detail p,.detail span {
+    font-size: 14px;
+}
+.detail p {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.detail .describe h3 {
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+.detail .card-text {
+    font-size: 30px;
+    font-weight: 600;
+    padding: 0;
 }
