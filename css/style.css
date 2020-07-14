@@ -13,7 +13,7 @@
             margin-bottom: 0;
         }
 
-        
+
         h3 {
             font-size: 30px;
             font-weight: 400;
@@ -316,15 +316,18 @@
             font-weight: 300;
         }
 
-        .san-pham-moi .item-san-pham-moi {
-            overflow: hidden;
+        .san-pham-moi .item-san-pham-moi1 {
+            background: url('../img/9.jpg');
+            background-position: 45% 38%;
+            height: 424px;
+            width: 540px;
         }
-
-        .san-pham-moi .item-san-pham-moi img {
-            width: 620px;
-            height: 790px;
+        .san-pham-moi .item-san-pham-moi2 {
+            background: url('../img/10.jpg');
+            background-position: 45% 30%;
+            height: 424px;
+            width: 540px;
         }
-
 
         /* item Sản phẩm */
 
@@ -332,6 +335,117 @@
             border: none;
             margin-top: 20px;
         }
+
+        .see-all a {
+            display: inline-block;
+            font-size: 20px;
+            font-weight: 500;
+            text-decoration: none;
+            background-color: #ED1C24;
+            color: white;
+            border-top: 1px solid #CCCCCC;
+            border-right: 1px solid #333333;
+            border-bottom: 1px solid #333333;
+            border-left: 1px solid #CCCCCC;
+            margin-bottom: 80px;
+            margin-top: 113px;
+            padding: 17px 48px;
+        }
+
+        .see-all .align-ct {
+            text-align: center;
+        }
+
+
+
+        .information-delivery .address-list .col-9 button {
+            font-size: 16px;
+            margin-right: 0;
+            margin-left: 0;
+            background-color: #ED1C24;
+            border-color: #ddd;
+            border-width: 1px;
+            border-image: none;
+            border-style: solid;
+            width: 380px;
+            height: 50px;
+            color: white;
+        }
+        .information-delivery .address-list .col-9 .align-right {
+            float: right;
+        }
+        .information-delivery .address-list .col-9 {
+            padding: 0;
+        }
+        .information-delivery .address-list .col-3 {
+            padding: 0;
+    
+        }
+        .information-delivery .address-list .col-3 a {
+            color: black;
+            font-size: 14px;
+        }
+        .information-delivery .bills .icon1 {
+            background: url('../img/4.jpg');
+            background-position: center center;
+            background-size: 64px;
+            width: 64px;
+            height: 64px;
+            border: solid 2px #cccccc;
+            border-radius: 5px;
+        }
+        .information-delivery .bills .price-left {
+            text-align: right;
+            vertical-align: middle;
+        }
+        .information-delivery .bills .price-left button {
+            width: 101px;
+            height: 44px;
+            background-color: #C9C9C9;
+            border-color: #C9C9C9;
+            border-width: 1px;
+            border-image: none;
+            border-style: solid;
+            font-size: 14px;
+            font-weight: bold;
+
+        }
+        .information-delivery .bills .one, .information-delivery .bills .two,.information-delivery .bills .three {
+            border-top: solid 1px #c9c9c9;
+        }
+        .information-delivery .bills .zero {
+            margin-top: 80px;
+            margin-bottom: 20px;
+        }
+        .information-delivery .bills .one {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        .information-delivery .bills .two,.information-delivery .bills .three {
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+        .information-delivery .icon-paying {
+            margin-top: 80px;
+            margin-bottom: 24px;
+        }
+        .information-delivery .detail-address .title-delivery {
+            padding-top: 40px;
+            padding-bottom: 20px;
+        }
+        .information-delivery .bills .col-2,
+        .information-delivery .bills .col-3,
+        .information-delivery .bills .col-6,
+        .information-delivery .bills .col-8,
+        .information-delivery .bills .col-9 {
+            padding: 0;
+        }
+
+
+
+
+
+
 
 
 
@@ -586,24 +700,139 @@
             text-transform: uppercase;
         }
 
-        .store  {
+        .store {
             padding-top: 50px;
             padding-bottom: 80px;
-        
+
         }
+
         .store .col-md-4 h3 {
             padding-bottom: 50px;
         }
+
         .store .fashion p {
             text-transform: uppercase;
         }
-        .store .col-12 button {
-            float: right;
+
+        .store .next-page button {
             width: 42px;
-            height: 42px;   
-            margin-right: 8px;
-            background-color: white;
+            height: 42px;
+            font-size: 14px;
+            margin-right: 0;
+            margin-left: 0;
+            background-color: #fff;
+            border-color: black;
+            border-width: 1px;
+            border-image: none;
+            border-style: solid;
         }
+
+        .store .next-page .float-r {
+            float: right;
+            padding-top: 73px;
+        }
+
+        .store .hoodie,
+        .store .pants,
+        .store .t-shirt {
+            padding-top: 125px;
+        }
+
+
+
+
+
+
+
+
+        .your-cart .container h3 {
+            font-size: 30px;
+            font-weight: 400;
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+
+        .your-cart .product-price img {
+            width: 110px;
+            height: 100px;
+        }
+
+        .your-cart .product-price th {
+            text-align: center;
+            vertical-align: middle;
+            font-weight: normal;
+            font-size: 14px;
+
+        }
+
+        .your-cart .product-price th p {
+            text-transform: uppercase;
+        }
+
+        .your-cart .product-price tbody th {
+            height: 175px;
+        }
+
+        .your-cart .product-price button {
+            width: 25px;
+            height: 25px;
+            font-size: 10px;
+            margin-right: 0;
+            margin-left: 0;
+            background-color: #fff;
+            border-color: #ddd;
+            border-width: 1px;
+            border-image: none;
+            border-style: solid;
+        }
+
+        .your-cart .keep-buying button {
+            font-size: 16px;
+            margin-right: 0;
+            margin-left: 0;
+            background-color: #ED1C24;
+            border-color: #ddd;
+            border-width: 1px;
+            border-image: none;
+            border-style: solid;
+            width: 270px;
+            height: 50px;
+            text-transform: uppercase;
+            color: white;
+
+        }
+
+        .your-cart .table th {
+            font-size: 14px;
+            font-weight: normal;
+        }
+
+        .your-cart .table th span {
+            float: right;
+        }
+
+        .your-cart .distance30 {
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+
+        .your-cart .paying button {
+            font-size: 16px;
+            margin-right: 0;
+            margin-left: 0;
+            background-color: #ED1C24;
+            border-color: #ddd;
+            border-width: 1px;
+            border-image: none;
+            border-style: solid;
+            width: 450px;
+            height: 50px;
+            text-transform: uppercase;
+            color: white;
+            float: right;
+            margin-bottom: 80px;
+        }
+
 
 
 
