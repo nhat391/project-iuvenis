@@ -94,15 +94,15 @@
 
   </header>
 
-  <div class="container br-crumb">
-    <nav aria-label="breadcrumb">
-      <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="index.html"></a>Trang chủ</li>
-        <li class="breadcrumb-item active" aria-current="page">Cửa hàng</li>
-        <li class="breadcrumb-item active" aria-current="page">Item1</li>
-      </ol>
-    </nav>
-
+  <div class="my-breadcrumb">
+    <div class="container-fluid">
+      <div class="container">
+        <p>
+          <a href="index.html">Trang chủ</a>
+          / T-shirt
+        </p>
+      </div>
+    </div>
   </div>
 
 
@@ -112,18 +112,12 @@
 
 
         <div class="visual-img">
-          <img src="http://via.placeholder.com/470x470?text=image0" alt="" id="big-photo">
+          <img src="img/3.jpg" alt="" id="big-photo">
           <p class="thumb">
-            <img big-photo="http://via.placeholder.com/470x470?text=image1"
+            <img big-photo="img/3.jpg"
               src="http://via.placeholder.com/80x80?text=image1" alt="" class="active">
-            <img big-photo="http://via.placeholder.com/470x470?text=image2"
+            <img big-photo="img/4.jpg"
               src="http://via.placeholder.com/80x80?text=image2" alt="">
-            <img big-photo="http://via.placeholder.com/470x470?text=image3"
-              src="http://via.placeholder.com/80x80?text=image3" alt="">
-            <img big-photo="http://via.placeholder.com/470x470?text=image4"
-              src="http://via.placeholder.com/80x80?text=image4" alt="">
-            <img big-photo="http://via.placeholder.com/470x470?text=image5"
-              src="http://via.placeholder.com/80x80?text=image5" alt="">
           </p>
         </div>
 
@@ -146,7 +140,7 @@
                   <button>M</button>
                   <button>L</button>
                   <button>XL</button>
-                  <a href="">Bảng size</a>
+                  <a href="" data-toggle="modal" data-target="#size-table">Bảng size</a>
                 </div>
               </div>
             </div>
@@ -332,6 +326,19 @@
       </div>
     </div>
   </footer>
+
+
+
+  <div class="modal fade" id="size-table" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+        </div>
+        <div class="modal-body">
+          <img src="img/Untitled-1.png" alt="">
+      </div>
+    </div>
+  </div>
 
 
 

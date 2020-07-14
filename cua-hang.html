@@ -88,19 +88,20 @@
 
   </header>
 
-  <div class="container br-crumb">
-    <nav aria-label="breadcrumb">
-      <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="#"></a>Trang chủ</li>
-        <li class="breadcrumb-item active" aria-current="page">Giới thiệu</li>
-      </ol>
-    </nav>
-
+  <div class="my-breadcrumb">
+    <div class="container-fluid">
+      <div class="container">
+        <p>
+          <a href="index.html">Trang chủ</a>
+          / Cửa hàng
+        </p>
+      </div>
+    </div>
   </div>
 
   <div class="container store">
-    <div class="row">
-      <div class="col-md-4">
+    <div class="row titlee">
+      <div class="col-md-4 fashion">
         <h3>Danh mục sản phẩm</h3>
         <p>tee shirt</p>
         <p>hoodie</p>
@@ -137,7 +138,7 @@
 
             <div class="col-md-4 col-sm-12">
               <div class="card item-san-pham">
-                <img src="http://via.placeholder.com/720x720?text=image" class="card-img-top" alt="...">
+                <img src="img/4.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">item 1</h5>
                   <p class="card-text">499.000 đ</p>
@@ -147,7 +148,7 @@
 
             <div class="col-md-4 col-sm-12">
               <div class="card item-san-pham">
-                <img src="http://via.placeholder.com/720x720?text=image" class="card-img-top" alt="...">
+                <img src="img/5.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">item 1</h5>
                   <p class="card-text">499.000 đ</p>
@@ -157,7 +158,7 @@
 
             <div class="col-md-4 col-sm-12">
               <div class="card item-san-pham">
-                <img src="http://via.placeholder.com/720x720?text=image" class="card-img-top" alt="...">
+                <img src="img/6.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">item 1</h5>
                   <p class="card-text">499.000 đ</p>
@@ -171,7 +172,7 @@
 
             <div class="col-md-4 col-sm-12">
               <div class="card item-san-pham">
-                <img src="http://via.placeholder.com/720x720?text=image" class="card-img-top" alt="...">
+                <img src="img/7.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">item 1</h5>
                   <p class="card-text">499.000 đ</p>
@@ -181,7 +182,7 @@
 
             <div class="col-md-4 col-sm-12">
               <div class="card item-san-pham">
-                <img src="http://via.placeholder.com/720x720?text=image" class="card-img-top" alt="...">
+                <img src="img/8.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">item 1</h5>
                   <p class="card-text">499.000 đ</p>
@@ -191,7 +192,7 @@
 
             <div class="col-md-4 col-sm-12">
               <div class="card item-san-pham">
-                <img src="http://via.placeholder.com/720x720?text=image" class="card-img-top" alt="...">
+                <img src="img/1.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">item 1</h5>
                   <p class="card-text">499.000 đ</p>
@@ -200,23 +201,40 @@
             </div>
 
           </div>
+
+          <div class="row">
+            <div class="col-12">
+              <button>..</button>
+              <button>3</button>
+              <button>2</button>
+              <button>1</button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
+  </div>
 
-
-
-    <footer class="container-fluid">
-      <div class="container">
+    <footer class="container-fluid remove-padding">
+      <div class="wrap-footer">
 
         <div class="row">
           <div class="col-md-4 col-sm-12 col-footer">
             <h2>Theo dõi XXX</h2>
 
             <ul>
-              <li><i class="fab fa-facebook"></i><a href="">facebook.com/xxxshop</a></li>
-              <li><i class="fab fa-twitter"></i><a href="">twitter.com/xxxshop</a></li>
-              <li><i class="fas fa-envelope"></i><a href="">xxxshop@gmail.com</a></li>
+              <li>
+                <i class="fab fa-facebook-f"></i>
+                <a href="">facebook.com/xxxshop</a>
+              </li>
+              <li>
+                <i class="fab fa-twitter "></i>
+                <a href="">twitter.com/xxxshop</a>
+              </li>
+              <li>
+                <i class="fab fa-google"></i>
+                <a href="">xxxshop@gmail.com</a>
+              </li>
             </ul>
           </div>
 
@@ -247,6 +265,102 @@
         </div>
       </div>
     </footer>
+
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="ModalLogin" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Đăng nhập tài khoản</h5>
+
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                  placeholder="Tên đăng nhập">
+              </div>
+              <div class="form-group">
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Mật khẩu">
+              </div>
+              <button type="submit" class="btn btn-primary">Đăng nhập</button>
+              <a href="" id="forgot-pw">Quên mật khẩu ?</a>
+              <p>Nếu bạn chưa có tài khoản, vui lòng đăng ký <a href="">tại đây</a></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="modal fade" id="ModalSignUp" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Đăng ký tài khoản</h5>
+
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+
+                <div class="col-6">
+                  <form action="">
+                    <div class="form-group">
+                      <input type="text" class="form-control" id="firstName" aria-describedby="emailHelp"
+                        placeholder="Họ">
+                    </div>
+                  </form>
+                </div>
+                <div class="col-6">
+                  <form action="">
+                    <div class="form-group">
+                      <input type="text" class="form-control" id="lastname" placeholder="Tên">
+                    </div>
+                  </form>
+                </div>
+
+              </div>
+              <div class="row">
+
+                <div class="col-6">
+                  <form action="">
+                    <div class="form-group">
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                        placeholder="Email">
+                    </div>
+                  </form>
+                </div>
+                <div class="col-6">
+                  <form action="">
+                    <div class="form-group">
+                      <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Mật khẩu">
+                    </div>
+                  </form>
+                </div>
+
+
+
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Đăng nhập</button>
+            <p>Nếu bạn đã có tài khoản, vui lòng đăng nhập <a href="">tại đây</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
 
 
 

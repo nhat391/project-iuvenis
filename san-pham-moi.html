@@ -89,14 +89,15 @@
   </header>
 
 
-  <div class="container br-crumb">
-    <nav aria-label="breadcrumb">
-      <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="#"></a>Trang chủ</li>
-        <li class="breadcrumb-item active" aria-current="page">Sản phẩm mới</li>
-      </ol>
-    </nav>
-    
+  <div class="my-breadcrumb">
+    <div class="container-fluid">
+      <div class="container">
+        <p>
+          <a href="index.html">Trang chủ</a>
+          / Sản phẩm mới
+        </p>
+      </div>
+    </div>
   </div>
 
 
@@ -107,91 +108,91 @@
     </div>
     <div class="container list-item-san-pham">
       <div class="row">
-  
+
         <div class="col-md-3 col-sm-12">
           <div class="card item-san-pham">
-            <img src="http://via.placeholder.com/720x720?text=image" class="card-img-top" alt="...">
+            <img src="img/1.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">item 1</h5>
               <p class="card-text">499.000 đ</p>
             </div>
           </div>
         </div>
-  
+
         <div class="col-md-3 col-sm-12">
           <div class="card item-san-pham">
-            <img src="http://via.placeholder.com/720x720?text=image" class="card-img-top" alt="...">
+            <img src="img/2.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">item 1</h5>
               <p class="card-text">499.000 đ</p>
             </div>
           </div>
         </div>
-  
+
         <div class="col-md-3 col-sm-12">
           <div class="card item-san-pham">
-            <img src="http://via.placeholder.com/720x720?text=image" class="card-img-top" alt="...">
+            <img src="img/3.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">item 1</h5>
               <p class="card-text">499.000 đ</p>
             </div>
           </div>
         </div>
-  
+
         <div class="col-md-3 col-sm-12">
           <div class="card item-san-pham">
-            <img src="http://via.placeholder.com/720x720?text=image" class="card-img-top" alt="...">
+            <img src="img/4.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">item 1</h5>
               <p class="card-text">499.000 đ</p>
             </div>
           </div>
         </div>
-  
+
       </div>
-  
+
       <div class="row">
-  
+
         <div class="col-md-3 col-sm-12">
           <div class="card item-san-pham">
-            <img src="http://via.placeholder.com/720x720?text=image" class="card-img-top" alt="...">
+            <img src="img/5.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">item 1</h5>
               <p class="card-text">499.000 đ</p>
             </div>
           </div>
         </div>
-  
+
         <div class="col-md-3 col-sm-12">
           <div class="card item-san-pham">
-            <img src="http://via.placeholder.com/720x720?text=image" class="card-img-top" alt="...">
+            <img src="img/6.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">item 1</h5>
               <p class="card-text">499.000 đ</p>
             </div>
           </div>
         </div>
-  
+
         <div class="col-md-3 col-sm-12">
           <div class="card item-san-pham">
-            <img src="http://via.placeholder.com/720x720?text=image" class="card-img-top" alt="...">
+            <img src="img/7.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">item 1</h5>
               <p class="card-text">499.000 đ</p>
             </div>
           </div>
         </div>
-  
+
         <div class="col-md-3 col-sm-12">
           <div class="card item-san-pham">
-            <img src="http://via.placeholder.com/720x720?text=image" class="card-img-top" alt="...">
+            <img src="img/8.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">item 1</h5>
               <p class="card-text">499.000 đ</p>
             </div>
           </div>
         </div>
-  
+
       </div>
     </div>
   </section>
@@ -199,17 +200,26 @@
 
 
 
-  <footer class="container-fluid">
-    <div class="container">
+  <footer class="container-fluid remove-padding">
+    <div class="wrap-footer">
 
       <div class="row">
         <div class="col-md-4 col-sm-12 col-footer">
           <h2>Theo dõi XXX</h2>
 
           <ul>
-            <li><i class="fab fa-facebook"></i><a href="">facebook.com/xxxshop</a></li>
-            <li><i class="fab fa-twitter"></i><a href="">twitter.com/xxxshop</a></li>
-            <li><i class="fas fa-envelope"></i><a href="">xxxshop@gmail.com</a></li>
+            <li>
+              <i class="fab fa-facebook-f"></i>
+              <a href="">facebook.com/xxxshop</a>
+            </li>
+            <li>
+              <i class="fab fa-twitter "></i>
+              <a href="">twitter.com/xxxshop</a>
+            </li>
+            <li>
+              <i class="fab fa-google"></i>
+              <a href="">xxxshop@gmail.com</a>
+            </li>
           </ul>
         </div>
 
@@ -243,17 +253,182 @@
 
 
 
+  <!-- Modal -->
+  <div class="modal fade login-form" id="ModalLogin" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Đăng nhập tài khoản</h5>
+
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                placeholder="Tên đăng nhập">
+            </div>
+            <div class="form-group">
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Mật khẩu">
+            </div>
+            <div class="container">
+              <div class="row">
+                <div class="col-12">
+                  <button type="submit" class="btn btn-primary">Đăng nhập</button>
+                  <a href="" data-toggle="modal" data-target="#recoveryPassword">Quên mật khẩu ?</a>
+                </div>
+              </div>
+            </div>
+            <p>Nếu bạn chưa có tài khoản, vui lòng đăng ký <a href="" data-toggle="modal" data-target="#ModalSignUp">tại
+                đây</a></p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="modal fade signup-form" id="ModalSignUp" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Đăng ký tài khoản</h5>
+
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+
+        </div>
+        <div class="modal-body">
+          <div class="container-fluid">
+            <div class="row">
+
+              <div class="col-6">
+                <form action="">
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="firstName" aria-describedby="emailHelp"
+                      placeholder="Họ">
+                  </div>
+                </form>
+              </div>
+              <div class="col-6">
+                <form action="">
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="lastname" placeholder="Tên">
+                  </div>
+                </form>
+              </div>
+
+            </div>
+            <div class="row">
+
+              <div class="col-6">
+                <form action="">
+                  <div class="form-group">
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                      placeholder="Email">
+                  </div>
+                </form>
+              </div>
+              <div class="col-6">
+                <form action="">
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Mật khẩu">
+                  </div>
+                </form>
+              </div>
+
+
+
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary" data-toggle="modal" data-target="#complete-signup">Đăng
+            ký</button>
+          <p>Nếu bạn đã có tài khoản, vui lòng đăng nhập <a href="" data-backdrop="true" data-toggle="modal"
+              data-target="#ModalLogin">tại đây</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="modal" id="complete-signup" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Bạn đã đăng ký tài khoản thành công</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="recoveryPassword" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <h3>Khôi phục mật khẩu</h3>
+          <p>Nhập email của bạn</p>
+          <form action="">
+            <div class="form-group">
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                placeholder="Email">
+            </div>
+          </form>
+          <button data-toggle="modal" data-target="#announcementPassword">Tiếp tục</button>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="announcementPassword" tabindex="-1" role="dialog"
+    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <h3>Khôi phục mật khẩu</h3>
+          <span>Đường link khôi phục mật khẩu đã được gửi vào email của bạn, </span><br>
+          <span>hãy truy cập vào đường link để tiếp tục.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"></script>
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-    crossorigin="anonymous"></script>
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-    crossorigin="anonymous"></script>
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+  </script>
 </body>
 
 </html>
