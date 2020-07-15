@@ -441,6 +441,32 @@
             padding: 0;
         }
 
+        
+
+
+
+        .paying-way .col-md-6 .input-group .marked-text {
+            padding-right: 330px;
+            padding-top: 2px;
+            border-radius: .25rem;
+        }
+        .paying-way .col-md-6 .input-group .marked-text p {
+            font-size: 14px;
+            font-weight: lighter;
+        }
+        .paying-way .col-md-6 .input-group .input-group-text {
+            border: 0;
+            background-color: white;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        .paying-way .checkbox-paying {
+            border: 1px solid #ced4da;
+            border-radius: .25rem;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
 
 
 
