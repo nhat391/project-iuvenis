@@ -31,20 +31,59 @@
                     </div>
                     <p>Giỏ hàng - Thông tin giao hàng</p>
                     <h6>Phương thức vận chuyển</h6>
-                    <div class="checkbox-paying">
-                        <div class="input-group">
-                            <div class="input-group-prepend">
-                              <div class="input-group-text">
-                                <input type="radio" aria-label="Radio button for following text input">
-                              </div>
+                    <div class="checkbox-delivery">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text">
+                                                <input type="radio" aria-label="Radio button for following text input">
+                                            </div>
+                                        </div>
+                                        <div class="marked-text">
+                                            <p>Giao hàng tận nơi</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="marked-text">
-                                <p>Giao hàng tận nơi</p>
-                            </div>
-                          </div>
+                        </div>
+                    </div>
+                    <h6>Phương thức thanh toán</h6>
+                    <div class="COD"><input type="radio" name="foo" /><span>Thanh toán khi nhận hàng</span></div>
+                    <div class="bank">
+                        <input type="radio" name="foo" /><span>Chuyển khoản qua ngân hàng</span>
+                    </div>
+                    <div class="detail-bank" id="module">
+                        <p class="collapse" id="collapseExample" aria-expanded="false">
+                            Tài khoản của shop: Ngân hàng VPBank chi nhánh Đội Cấn <br>
+                            Tên tài khoản: Trần Quốc Toản <br>
+                            STK: 100943594678 <br>
+                            Nội dung chuyển khoản bạn vui lòng điền theo cú pháp sau: <br>
+                            MÃ ĐƠN HÀNG + SĐT + TÊN <br>
+                            Cảm ơn bạn.
+                        </p>
                     </div>
 
-                    
+
+
+
+
+
+                    <div class="row pay-footer">
+                        <div class="col-7">
+                            <div class="can-giua">
+                                <i class="fas fa-angle-left"></i>
+                                <a href="">Quay lại thông tin giao hàng</a>
+                            </div>
+                        </div>
+                        <div class="col-5  ">
+                            <button><a data-target="#complete-item-bill" data-toggle="modal" class="MainNavText" id="MainNavHelp" 
+                                href="#complete-item-bill">Hoàn tất đơn hàng</a></button>
+                        </div>
+                    </div>
+
+
 
 
                 </div>
@@ -95,6 +134,27 @@
             </div>
         </div>
     </div>
+
+    <div class="modal fade" id="complete-item-bill" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">Bạn đã đặt hàng thành công!</h5>
+            </div>
+            <div class="modal-body">
+              <p style="padding-bottom: 32px;">Cảm ơn bạn vì đã ủng hộ</p>
+              <p>
+                  <span>Thời gian giao hàng dự kiến: <strong>01/07/2019</strong></span> <br>
+                  <span>Mã đơn hàng: <ins>#170880</ins></span> <br>
+                  <span>Nếu có thắc mắc hay gặp trục trặc trong quá trình mua</span> <br>
+                  <span>và đặt hàng hãy liên hệ qua hotline hoặc fanpage của</span> <br>
+                  <span>bọn mình.</span>
+              </p>
+              <button><a href="">Tiếp tục mua hàng</a></button>
+            </div>
+          </div>
+        </div>
+      </div>
 
 
 

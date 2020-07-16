@@ -20,6 +20,13 @@
             margin-bottom: 0;
         }
 
+        h6 {
+            font-size: 18px;
+            font-weight: 400;
+            padding-top: 40px;
+            padding-bottom: 20px;
+        }
+
         /* cấu hình headline */
 
         .headline {
@@ -294,11 +301,6 @@
         }
 
         /* Ảnh bìa */
-        .anh-bia {
-            height: 600px;
-            width: 100%;
-            background-color: aqua;
-        }
 
         /* Sản phẩm mới */
 
@@ -322,6 +324,7 @@
             height: 424px;
             width: 540px;
         }
+
         .san-pham-moi .item-san-pham-moi2 {
             background: url('../img/10.jpg');
             background-position: 45% 30%;
@@ -335,6 +338,34 @@
             border: none;
             margin-top: 20px;
         }
+
+        .item-san-pham:hover img {
+            border: 1px solid #cccccc;
+            zoom: 2;
+        }
+        .list-item-san-pham a {
+            color: black;
+            text-decoration: none;
+        }
+
+
+        #module {
+            width: 500px;
+            font-size: 14px;
+            line-height: 1.5;
+          }
+          
+          #module a.collapsed:after  {
+              content: '+ Show More';
+          }
+          
+          #module a:not(.collapsed):after {
+              content: '- Show Less';
+          }
+
+
+
+
 
         .see-all a {
             display: inline-block;
@@ -371,20 +402,25 @@
             height: 50px;
             color: white;
         }
+
         .information-delivery .address-list .col-9 .align-right {
             float: right;
         }
+
         .information-delivery .address-list .col-9 {
             padding: 0;
         }
+
         .information-delivery .address-list .col-3 {
             padding: 0;
-    
+
         }
+
         .information-delivery .address-list .col-3 a {
             color: black;
             font-size: 14px;
         }
+
         .information-delivery .bills .icon1 {
             background: url('../img/4.jpg');
             background-position: center center;
@@ -394,10 +430,12 @@
             border: solid 2px #cccccc;
             border-radius: 5px;
         }
+
         .information-delivery .bills .price-left {
             text-align: right;
             vertical-align: middle;
         }
+
         .information-delivery .bills .price-left button {
             width: 101px;
             height: 44px;
@@ -410,29 +448,39 @@
             font-weight: bold;
 
         }
-        .information-delivery .bills .one, .information-delivery .bills .two,.information-delivery .bills .three {
+
+        .information-delivery .bills .one,
+        .information-delivery .bills .two,
+        .information-delivery .bills .three {
             border-top: solid 1px #c9c9c9;
         }
+
         .information-delivery .bills .zero {
             margin-top: 80px;
             margin-bottom: 20px;
         }
+
         .information-delivery .bills .one {
             padding-top: 20px;
             padding-bottom: 20px;
         }
-        .information-delivery .bills .two,.information-delivery .bills .three {
+
+        .information-delivery .bills .two,
+        .information-delivery .bills .three {
             padding-top: 30px;
             padding-bottom: 30px;
         }
+
         .information-delivery .icon-paying {
             margin-top: 80px;
             margin-bottom: 24px;
         }
+
         .information-delivery .detail-address .title-delivery {
             padding-top: 40px;
             padding-bottom: 20px;
         }
+
         .information-delivery .bills .col-2,
         .information-delivery .bills .col-3,
         .information-delivery .bills .col-6,
@@ -441,30 +489,145 @@
             padding: 0;
         }
 
-        
 
 
+
+        .paying-way {
+            padding-bottom: 160px;
+        }
 
         .paying-way .col-md-6 .input-group .marked-text {
-            padding-right: 330px;
             padding-top: 2px;
             border-radius: .25rem;
         }
+
         .paying-way .col-md-6 .input-group .marked-text p {
             font-size: 14px;
             font-weight: lighter;
         }
+
         .paying-way .col-md-6 .input-group .input-group-text {
             border: 0;
             background-color: white;
-            padding-left: 20px;
+            padding-left: 5px;
             padding-right: 20px;
         }
-        .paying-way .checkbox-paying {
+
+        .paying-way .checkbox-delivery {
             border: 1px solid #ced4da;
             border-radius: .25rem;
             padding-top: 10px;
             padding-bottom: 10px;
+        }
+
+
+        .paying-way .radiobox .COD {
+            outline: solid;
+            padding-top: 20px;
+        }
+
+
+
+
+        #complete-item-bill .modal-header {
+            display: block;
+            padding: 0;
+            text-align: center;
+            border-bottom: none;
+
+        }
+
+
+        #complete-item-bill h5 {
+            font-size: 30px;
+            font-weight: 400;
+            padding-top: 50px;
+            padding-bottom: 10px;
+        }
+        #complete-item-bill .modal-body {
+            text-align: center;
+            padding-left: 60px;
+            padding-right: 60px;
+            padding-bottom: 30px;
+        }
+        #complete-item-bill button {
+            background-color: #ED1C24;
+            color: white;
+            border: none;
+            border-radius: 0;
+            width: 270px;
+            height: 50px;
+            font-size: 16px;
+            font-weight: medium;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            margin-top: 32px;
+        }
+        #complete-item-bill a {
+            color: white;
+        }
+
+
+
+
+        /* banner ở đây */
+        .anh-bia {
+            background-image: url(../img/223.png);
+            background-position: center 45%;
+            width: 100%;
+            height: 1362px;
+        }
+
+
+        .paying-way .COD,
+        .paying-way .bank {
+            border: 1px solid #ced4da;
+            padding: 14px 20px;
+            border-radius: .25rem;
+        }
+
+        .paying-way .COD span,
+        .paying-way .bank span {
+            font-size: 14px;
+            font-weight: lighter;
+            padding-left: 20px;
+        }
+
+        .paying-way .detail-bank {
+            text-align: center;
+            font-size: 14px;
+            font-weight: lighter;
+            padding: 31px;
+            border: 1px solid #ced4da;
+        }
+
+        .paying-way .pay-footer {
+            padding-top: 20px;
+        }
+
+        .paying-way .pay-footer button {
+            font-size: 16px;
+            margin-right: 0;
+            margin-left: 0;
+            background-color: #ED1C24;
+            border-color: #ddd;
+            border-width: 1px;
+            border-image: none;
+            border-style: solid;
+            width: 206px;
+            height: 50px;
+        }
+
+        .paying-way .pay-footer button a {
+            color: white;
+        }
+
+        .paying-way .pay-footer .col-7 a {
+            color: black;
+        }
+
+        .paying-way .pay-footer .col-7 .can-giua {
+            padding-top: 13px;
         }
 
 
@@ -582,11 +745,21 @@
 
         .visual-img .thumb img:hover,
         .visual-img .thumb img.active {
-            box-shadow: 0 0 15px rgba(0, 0, 0, .25);
+            box-shadow: 0 0 5px rgba(0, 0, 0, .25);
         }
 
         .visual-img img {
             margin-bottom: 8px;
+        }
+
+        .visual-img #big-photo {
+            width: 470px;
+            height: 470px;
+        }
+
+        .visual-img .thumb img {
+            width: 80px;
+            height: 80px;
         }
 
         .slick-prev,
@@ -621,6 +794,10 @@
 
         .related-product-list-item {
             position: relative;
+        }
+
+        .related-product-list-item .slick-active {
+            outline: white;
         }
 
 
@@ -944,12 +1121,23 @@
 
         .chinh-sach-bao-mat h2,
         .gioi-thieu h2,
-        .tro-giup h2 {
+        .tro-giup h2,
+        .lien-he h2 {
             font-size: 30px;
             margin-top: 50px;
             margin-bottom: 50px;
+            font-weight: 400;
         }
+
 
         .lien-he iframe {
             margin-top: 50px;
+        }
+
+        .lien-he ul {
+            padding-left: 20px;
+        }
+
+        .lien-he {
+            padding-bottom: 80px;
         }
