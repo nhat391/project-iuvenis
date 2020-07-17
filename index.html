@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
   <title>iuvenis - Trang chủ</title>
-  <link rel="shortcut icon" type="image/png" href="img/favicon.ico" />
+  
 </head>
 
 <body>
@@ -63,8 +63,16 @@
             <li class="nav-item">
               <a class="nav-link" href="san-pham-moi.html">Sản phẩm mới</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="cua-hang.html">Cửa hàng</a>
+            <li class="nav-item dropdown">
+              <a class="nav-link" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Cửa hàng
+              </a>
+              <div class="dropdown-menu menu-nav" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="cua-hang.html">T-shirt</a>
+                <a class="dropdown-item" href="hoodie.html">Hoodie</a>
+                <a class="dropdown-item" href="pants.html">Pants</a>
+              </div>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="chinh-sach-bao-mat.html">Chính sách bảo mật</a>
@@ -89,7 +97,7 @@
   </header>
 
   <div class="container-fluid anh-bia">
-    
+
   </div>
 
   <div class="container">
@@ -115,9 +123,9 @@
     <div class="row">
 
       <div class="col-md-3 col-sm-12">
-        <a href="item1.html">
+        <a href="t-shirt.html">
           <div class="card item-san-pham" id="open-tab">
-            <img src="img/1.jpg" class="card-img-top" alt="...">
+            <img src="img/4.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">item 1</h5>
               <p class="card-text">499.000 đ</p>
@@ -128,7 +136,7 @@
 
       <div class="col-md-3 col-sm-12">
         <div class="card item-san-pham">
-          <img src="img/2.jpg" class="card-img-top" alt="...">
+          <img src="img/12.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">item 1</h5>
             <p class="card-text">499.000 đ</p>
@@ -138,7 +146,7 @@
 
       <div class="col-md-3 col-sm-12">
         <div class="card item-san-pham">
-          <img src="img/3.jpg" class="card-img-top" alt="...">
+          <img src="img/13.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">item 1</h5>
             <p class="card-text">499.000 đ</p>
@@ -148,7 +156,7 @@
 
       <div class="col-md-3 col-sm-12">
         <div class="card item-san-pham">
-          <img src="img/4.jpg" class="card-img-top" alt="...">
+          <img src="img/16.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">item 1</h5>
             <p class="card-text">499.000 đ</p>
@@ -172,7 +180,7 @@
 
       <div class="col-md-3 col-sm-12">
         <div class="card item-san-pham">
-          <img src="img/6.jpg" class="card-img-top" alt="...">
+          <img src="img/tee (10).jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">item 1</h5>
             <p class="card-text">499.000 đ</p>
@@ -182,7 +190,7 @@
 
       <div class="col-md-3 col-sm-12">
         <div class="card item-san-pham">
-          <img src="img/7.jpg" class="card-img-top" alt="...">
+          <img src="img/20.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">item 1</h5>
             <p class="card-text">499.000 đ</p>
@@ -192,7 +200,7 @@
 
       <div class="col-md-3 col-sm-12">
         <div class="card item-san-pham">
-          <img src="img/8.jpg" class="card-img-top" alt="...">
+          <img src="img/tee (23).jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">item 1</h5>
             <p class="card-text">499.000 đ</p>
@@ -223,15 +231,15 @@
           <ul>
             <li>
               <i class="fab fa-facebook-f"></i>
-              <a href="">facebook.com/xxxshop</a>
+              <a href="">facebook.com/iuvenis</a>
             </li>
             <li>
               <i class="fab fa-twitter "></i>
-              <a href="">twitter.com/xxxshop</a>
+              <a href="">twitter.com/iuvenis</a>
             </li>
             <li>
               <i class="fab fa-google"></i>
-              <a href="">xxxshop@gmail.com</a>
+              <a href="">iuvenis@gmail.com</a>
             </li>
           </ul>
         </div>
@@ -288,7 +296,7 @@
             <div class="form-group">
               <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Mật khẩu">
             </div>
-            <button type="submit" class="btn btn-primary">Đăng nhập</button>
+            <button type="submit" class="btn btn-primary"><a href="tai-khoan.html">Đăng nhập</a></button>
             <a href="" id="forgot-pw">Quên mật khẩu ?</a>
             <p>Nếu bạn chưa có tài khoản, vui lòng đăng ký <a href="">tại đây</a></p>
           </form>
@@ -353,7 +361,7 @@
 
             </div>
           </div>
-          <button type="submit" class="btn btn-primary">Đăng nhập</button>
+          <button type="submit" class="btn btn-primary">Đăng ký</button>
           <p>Nếu bạn đã có tài khoản, vui lòng đăng nhập <a href="">tại đây</a></p>
         </div>
       </div>

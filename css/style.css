@@ -79,6 +79,10 @@
             font-weight: medium;
             margin-bottom: 20px;
         }
+        #ModalLogin button[type=submit] a {
+            color: white;
+            text-decoration: none;
+        }
 
         #ModalLogin .modal-header {
             border-bottom: none;
@@ -246,6 +250,7 @@
 
         .logo .logo-image {
             text-align: center;
+            padding-top: 20px;
         }
 
         .logo .logo-image img {
@@ -290,13 +295,15 @@
             border: none;
             background-color: #f1f1f1;
         }
+
         .search-box .iconblack {
             color: black;
         }
+
         .search-box .point {
             cursor: pointer;
         }
-        
+
 
         .my-breadcrumb {
             background-color: #e9ecef;
@@ -351,6 +358,7 @@
         .item-san-pham:hover img {
             border: 1px solid #cccccc;
             zoom: 2;
+            border-radius: 5px;
         }
 
         .list-item-san-pham a {
@@ -500,6 +508,7 @@
             margin-bottom: 24px;
             text-align: left;
         }
+
         .information-delivery .icon-paying img {
             width: 143px;
             height: 60px;
@@ -582,31 +591,38 @@
         .shopping-cart {
             position: relative;
         }
+
         .cart-content {
             position: absolute;
             left: -280px;
         }
+
         .cart-content {
             width: 300px;
             height: 250px;
             padding: 15px 17px;
         }
+
         .shopping-cart .cart-item img {
             width: 60px;
             height: 60px;
         }
+
         .shopping-cart .cart-item {
             display: inline-block;
             margin-top: 8px;
         }
+
         .shopping-cart span {
             font-size: 10px;
             font-weight: lighter;
         }
+
         .shopping-cart strong {
             font-size: 10px;
 
         }
+
         .shopping-cart .footer-cart button {
             background-color: #ED1C24;
             border: none;
@@ -616,30 +632,38 @@
             font-size: 16px;
             font-weight: medium;
         }
+
         .shopping-cart .footer-cart a {
             color: white;
         }
+
         .shopping-cart .j-padding {
             padding-left: 90px;
             padding-top: 11px;
             padding-bottom: 21.5px;
         }
+
         .shopping-cart .footer-cart {
             border-top: 1px solid #cccccc;
         }
+
         .shopping-cart .footer-cart .r-flo {
             text-align: right;
             padding-left: 42px;
         }
+
         .shopping-cart .footer-cart .col-2 {
-            padding:0;
+            padding: 0;
         }
+
         .shopping-cart .footer-cart .container {
             padding: 14.5px 0 15px 0;
         }
+
         .shopping-cart .footer-cart p {
             font-size: 10px;
         }
+
         .shopping-cart .j-padding button {
             background-color: white;
             border: 1px solid #cccccc;
@@ -649,11 +673,55 @@
             font-size: 10px;
             font-weight: medium;
         }
+
         .shopping-cart .cart-button {
             border: none;
             background: white;
+            padding: 0;
         }
 
+        .shopping-cart .cart-button:focus {
+            outline: none;
+        }
+
+        .shopping-cart {
+            position: relative;
+        }
+
+        .shopping-cart:after {
+            position: absolute;
+            content: '1';
+            font-size: 8px;
+            text-align: center;
+            padding-top: 3px;
+            border-radius: 50%;
+            color: white;
+            width: 16px;
+            height: 16px;
+            left: 65%;
+            bottom: 50%;
+            top: -4px;
+            background-color: #ED1C24;
+            z-index: 10000;
+            animation-name: move;
+            animation-duration: 1s;
+            animation-iteration-count: inherit;
+            animation-timing-function: ease;
+        }
+        @keyframes move{
+            from{ top: -50px;}
+            to{ top: -4px;}
+        }
+        
+        .collapse .dropdown {
+            position: relative;
+        }
+
+        .collapse .dropdown .menu-nav {
+            position: absolute;
+            left: -30%;
+        }
+        
 
 
 
@@ -841,7 +909,6 @@
             text-transform: uppercase;
             margin-top: 32px;
         }
-
         #complete-item-bill a {
             color: white;
         }
@@ -1238,6 +1305,10 @@
         .store .t-shirt {
             padding-top: 125px;
         }
+        .store .fashion a {
+            color: black;
+            text-decoration: none;
+        }
 
 
 
@@ -1316,6 +1387,14 @@
             padding-top: 30px;
             padding-bottom: 30px;
         }
+        .your-cart .distance30 button:focus {
+            outline: none;
+        }
+        .your-cart .distance30 a {
+            color: white;
+            text-decoration: none;
+        }
+
 
         .your-cart .paying button {
             font-size: 16px;
@@ -1332,6 +1411,13 @@
             color: white;
             float: right;
             margin-bottom: 80px;
+        }
+        .your-cart .paying button:focus {
+            outline: none;
+        }
+        .your-cart .paying a {
+            color: white;
+            text-decoration: none;
         }
 
 
@@ -1359,11 +1445,18 @@
             color: white;
         }
 
+
         .detail .row .size button:focus {
             background-color: #ED1C24;
             color: white;
-            border: solid 1px black;
             border-radius: 0;
+            outline: none;
+            border-color: white;
+        }
+
+        .detail .row .size a {
+            font-size: 14px;
+            color: #ED1C24;
         }
 
         .detail .amount .so-luong {
@@ -1377,7 +1470,9 @@
             background-color: white;
             border-color: #707070;
             border-width: 1px;
-            -webkit-appearance: none;
+        }
+        .detail .amount button:focus {
+            outline: none;
         }
 
         .detail .amount a {
