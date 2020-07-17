@@ -11,7 +11,7 @@
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
-    <title>Cửa hàng</title>
+    <title>Phương thức thanh toán</title>
     <link rel="shortcut icon" type="image/png" href="img/favicon.ico" />
 </head>
 
@@ -22,13 +22,13 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <div class="container ">
+                    
                         <div class="logo">
-                            <div class="icon-paying">
-                                <p style="color: white; text-align: center; padding-top: 20px;">LOGO</p>
+                            <div class="icon-paying ">
+                                <img src="img/iuvenisss.png" alt="">
                             </div>
                         </div>
-                    </div>
+                    
                     <p>Giỏ hàng - Thông tin giao hàng</p>
                     <h6>Phương thức vận chuyển</h6>
                     <div class="checkbox-delivery">
@@ -51,24 +51,36 @@
                     </div>
                     <h6>Phương thức thanh toán</h6>
                     <div class="COD"><input type="radio" name="foo" /><span>Thanh toán khi nhận hàng</span></div>
-                    <div class="bank">
-                        <input type="radio" name="foo" /><span>Chuyển khoản qua ngân hàng</span>
+
+
+
+                    <div class="accordion" id="accordionExample">
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link btn-block text-left" type="button"
+                                        data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                                        aria-controls="collapseOne">
+                                        <input type="radio" name="foo" /><span>Chuyển khoản qua ngân hàng</span>
+                                    </button>
+                                </h2>
+                            </div>
+
+                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                                data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <p>
+                                        Tài khoản của shop: Ngân hàng VPBank Chi nhánh Đội Cấn <br>
+                                        Tên tài khoản: Trần Quốc Toản <br>
+                                        STK: 100943594678 <br>
+                                        Nội dung chuyển khoản bạn vui lòng điền theo CÚ PHÁP sau: <br>
+                                        MÃ ĐƠN HÀNG + SĐT + TÊN <br>
+                                        Cảm ơn bạn.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="detail-bank" id="module">
-                        <p class="collapse" id="collapseExample" aria-expanded="false">
-                            Tài khoản của shop: Ngân hàng VPBank chi nhánh Đội Cấn <br>
-                            Tên tài khoản: Trần Quốc Toản <br>
-                            STK: 100943594678 <br>
-                            Nội dung chuyển khoản bạn vui lòng điền theo cú pháp sau: <br>
-                            MÃ ĐƠN HÀNG + SĐT + TÊN <br>
-                            Cảm ơn bạn.
-                        </p>
-                    </div>
-
-
-
-
-
 
                     <div class="row pay-footer">
                         <div class="col-7">
@@ -78,8 +90,8 @@
                             </div>
                         </div>
                         <div class="col-5  ">
-                            <button><a data-target="#complete-item-bill" data-toggle="modal" class="MainNavText" id="MainNavHelp" 
-                                href="#complete-item-bill">Hoàn tất đơn hàng</a></button>
+                            <button><a data-target="#complete-item-bill" data-toggle="modal" class="MainNavText"
+                                    id="MainNavHelp" href="#complete-item-bill">Hoàn tất đơn hàng</a></button>
                         </div>
                     </div>
 
@@ -135,26 +147,27 @@
         </div>
     </div>
 
-    <div class="modal fade" id="complete-item-bill" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal fade" id="complete-item-bill" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLongTitle">Bạn đã đặt hàng thành công!</h5>
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Bạn đã đặt hàng thành công!</h5>
+                </div>
+                <div class="modal-body">
+                    <p style="padding-bottom: 32px;">Cảm ơn bạn vì đã ủng hộ</p>
+                    <p>
+                        <span>Thời gian giao hàng dự kiến: <strong>01/07/2019</strong></span> <br>
+                        <span>Mã đơn hàng: <ins>#170880</ins></span> <br>
+                        <span>Nếu có thắc mắc hay gặp trục trặc trong quá trình mua</span> <br>
+                        <span>và đặt hàng hãy liên hệ qua hotline hoặc fanpage của</span> <br>
+                        <span>bọn mình.</span>
+                    </p>
+                    <button><a href="">Tiếp tục mua hàng</a></button>
+                </div>
             </div>
-            <div class="modal-body">
-              <p style="padding-bottom: 32px;">Cảm ơn bạn vì đã ủng hộ</p>
-              <p>
-                  <span>Thời gian giao hàng dự kiến: <strong>01/07/2019</strong></span> <br>
-                  <span>Mã đơn hàng: <ins>#170880</ins></span> <br>
-                  <span>Nếu có thắc mắc hay gặp trục trặc trong quá trình mua</span> <br>
-                  <span>và đặt hàng hãy liên hệ qua hotline hoặc fanpage của</span> <br>
-                  <span>bọn mình.</span>
-              </p>
-              <button><a href="">Tiếp tục mua hàng</a></button>
-            </div>
-          </div>
         </div>
-      </div>
+    </div>
 
 
 

@@ -45,7 +45,7 @@
     <div class="container">
       <div class="logo">
         <div class="logo-image">
-          <p style="color: white; text-align: center; padding-top: 20px;">LOGO</p>
+          <img src="img/iuvenisss.png" alt="">
         </div>
       </div>
     </div>
@@ -84,10 +84,56 @@
           <form class="form-inline my-2 my-lg-0">
             <input class="search-box form-control form-control-sm mr-sm-2" type="search" placeholder="Search here..."
               aria-label="Search">
-            <a href=""><span class="fa fa-search"></span></a>
+            <div class="point"><i class="fa fa-search iconblack"></i></div>
           </form>
 
-          <a href=""><span class="fas fa-shopping-cart"></span></a>
+          <div class="dropdown shopping-cart">
+            <button class="cart-button" data-toggle="dropdown">
+              <p class="fas fa-shopping-cart"></p>
+            </button>
+            <ul class="dropdown-menu cart-content" role="menu" aria-labelledby="menu1">
+              <li>
+                <div class="container cart-item">
+                  <div class="row">
+                    <div class="col-4">
+                      <img src="img/4.jpg" alt="">
+                    </div>
+                    <div class="col-8">
+                      <span>Item 1</span> <br>
+                      <strong>499.000 <u>đ</u></strong>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="container">
+                  <div class="row">
+                    <div class="col-8 j-padding">
+                      <div class="btn-group" role="group" aria-label="...">
+                        <button>-</button>
+                        <button>1</button>
+                        <button>+</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="footer-cart">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-md-9"><p>Tổng tiền tạm tính:</p></div>
+                      <div class="col-md-3 r-flo"><p>499.000đ</p></div>
+                    </div>
+                  </div>
+                  <button><a href="phuong-thuc-thanh-toan.html">Tiến hành thanh toán</a></button>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+
+
         </div>
       </div>
     </nav>
@@ -114,10 +160,8 @@
         <div class="visual-img">
           <img src="img/3.jpg" alt="" id="big-photo">
           <p class="thumb">
-            <img big-photo="img/3.jpg"
-              src="img/3.jpg" alt="" class="active">
-            <img big-photo="img/4.jpg"
-              src="img/4.jpg" alt="">
+            <img big-photo="img/3.jpg" src="img/3.jpg" alt="" class="active">
+            <img big-photo="img/4.jpg" src="img/4.jpg" alt="">
           </p>
         </div>
 
@@ -133,17 +177,17 @@
           <p>
             Kích thước
           </p>
-            <div class="row">
-              <div class="col-12">
-                <div class="size">
-                  <button>S</button>
-                  <button>M</button>
-                  <button>L</button>
-                  <button>XL</button>
-                  <a href="" data-toggle="modal" data-target="#size-table">Bảng size</a>
-                </div>
+          <div class="row">
+            <div class="col-12">
+              <div class="size">
+                <button>S</button>
+                <button>M</button>
+                <button>L</button>
+                <button>XL</button>
+                <a href="" data-toggle="modal" data-target="#size-table">Bảng size</a>
               </div>
             </div>
+          </div>
 
         </div>
 
@@ -329,39 +373,40 @@
 
 
 
-  <div class="modal fade" id="size-table" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal fade" id="size-table" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
         <div class="modal-header">
         </div>
         <div class="modal-body">
           <img src="img/Untitled-1.png" alt="">
+        </div>
       </div>
     </div>
-  </div>
 
 
 
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-  </script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-  </script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
-  </script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+    </script>
 
 
-  <!-- <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <!-- <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>-->
 
-  <script src="slick/slick.min.js"></script>
+    <script src="slick/slick.min.js"></script>
 
 
-  <script src="script/script.js"></script>
+    <script src="script/script.js"></script>
 
 </body>
 
